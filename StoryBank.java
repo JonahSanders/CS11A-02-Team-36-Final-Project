@@ -17,16 +17,16 @@ public class StoryBank{
   */
   public static File storyCall(int storyNumber){
       Random rand = new Random(4);
-      File story = new File(StoryOne.txt);
+      File story = new File("StoryOne.txt");
       switch(storyNumber){
         case 1:
-          story=StoryOne.txt;
+          story = new File("StoryOne.txt"); //HELP
           break;
         case 2:
-          story=StoryTwo.txt;
+          story = new File("StoryTwo.txt"); //HELP
           break;
         case 3:
-          story=StoryThree.txt;
+          story = new File("StoryThree.txt"); //HELP
           break;
         default:
           storyNumber=rand.nextInt(3)+1;

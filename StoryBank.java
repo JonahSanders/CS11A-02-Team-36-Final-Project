@@ -8,9 +8,6 @@ the HickeyLibs program can call upon.
 * @since 2018-11-6
 */
 public class StoryBank{
-  public static void main(String[] args) {
-    storyCall();
-  }
   /**
   * The storyCall method choses a the narrative according to the input the user
   * gave in the HickeyLibs class or if none was given, a random one.
@@ -18,26 +15,26 @@ public class StoryBank{
   * @version 1.0
   * @since 2018-11-6
   */
-  public static void storyCall(){
-    //Scanner console = new Scanner(System.in);
-    Random rand = new Random();
-    File story = new File("StoryOne.txt");
-    String content;
-    try{
-      Scanner fileReader = new Scanner(story);
-      while (fileReader.hasNextLine()) {
-         content = fileReader.nextLine();
-         System.out.println(content);
-        }
-    } catch(Throwable t) {
-
+  public static File storyCall(int storyNumber){
+      Random rand = new Random(4);
+      File story = new File(StoryOne.txt);
+      switch(storyNumber){
+        case 1:
+          story=StoryOne.txt;
+          break;
+        case 2:
+          story=StoryTwo.txt;
+          break;
+        case 3:
+          story=StoryThree.txt;
+          break;
+        default:
+          storyNumber=rand.nextInt(3)+1;
+          storyCall(storyNumber);
+      }
+      return story;
     }
 
-
-    //choosing a story at random code
-    }
-  //  return story;
-  }
   /**
   * The convertStory method takes the story and converts it into an array with
   * each word corresponding to a value
@@ -45,9 +42,23 @@ public class StoryBank{
   * @version 1.1
   * @since 2018-11-7
   */
-  /* public static String[] convertStory(String story){
-  //  storyCall(1/*INPUT));
-    String[] madLib = story.split(" ");
-    return madLib;
-  }
-} */
+ public static String[] convertStory(File story){
+   String[] storyArray = new String[150];
+   int wordNumber = 0;
+   try {
+     Scanner fileScanner = new Scanner(story);
+     while(fileScanner.hasNextLine()){
+       String line = fileScanner.nextLine();
+       Scanner lineScanner = new Scanner(line);
+  //     lineScanner.useDelimeter(" "); HELP TRYING TO SPLIT .NEXT() INTO SPACES
+  //     CREATING CODE TO CREATE A NEW ARRAY WITH MORE VALUES IF IT RUNS OUT?
+       storyArray[wordNumber] = lineScanner.next();
+       wordNumber++;
+     }
+     fileScanner.close();
+   } catch(Exception e) {
+      e.printStackTrace();
+   }
+   return storyArray;
+ }
+}

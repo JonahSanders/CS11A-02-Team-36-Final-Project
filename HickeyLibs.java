@@ -9,8 +9,12 @@ import java.io.*;
 * @version 1.0
 * @since 2018-11-6
 */
-public class HickeyLibs{
+public class HickeyLibs extends StoryBank{
   public static void main(String[] args) {
+    //Welcome Message, etc.
+    File story = storyCall(/*UserInput*/1);
+    String[] storyArray = convertStory(story);
+
 
   }
 }

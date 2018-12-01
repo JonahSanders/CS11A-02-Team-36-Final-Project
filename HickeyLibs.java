@@ -15,7 +15,7 @@ public class HickeyLibs {
   public static String story = "";
   public static void main(String[] args) {
     //Welcome Message, etc.
-    story = StoryBank.storyCall(/*UserInput*/2);
+    story = StoryBank.storyCall(/*UserInput*/1);
     story = StoryBank.convertStoryToString(story);
     String[] storyArray = StoryBank.convertStoryToArray(story);
     System.out.println(Arrays.toString(storyArray));

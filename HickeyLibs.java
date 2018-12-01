@@ -28,6 +28,7 @@ public class HickeyLibs {
     StoryBank.iterateThroughStory(storyArray);
     //Would you like your story read aloud Message
     //Jiale: add a conditional if they say yeah add the voice thing from L30 in class using SimpleTTS
-    //Thank you for playing message
+    System.out.println("Thank you for playing HickeyLibs!!");
+    System.out.println("We hope you had fun and enjoyed the game.");
   }
 }

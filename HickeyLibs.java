@@ -20,7 +20,9 @@ public class HickeyLibs {
     System.out.println("");
     System.out.println("Ready to start?");
     System.out.println("Please enter 1, 2, 3 to choose the storyline you will be completing: ");
-
+    Scanner scan = new Scanner(System.in);
+    int story = scan.nextInt();
+    
     story = StoryBank.storyCall(/*UserInput*/2);
     story = StoryBank.convertStoryToString(story);
     String[] storyArray = StoryBank.convertStoryToArray(story);

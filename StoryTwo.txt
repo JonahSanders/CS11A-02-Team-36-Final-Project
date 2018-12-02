@@ -1,10 +1,10 @@
-Hello everyone! Ready for mock interviews? As you all know I (noun) having
-to do this so let’s get this over with as (Speed) as possible. Okay before 
-we start, I’m going to assume as (age) year old’s you ae skilled in (adjective) 
-this will be very useful in interviews. But remember to not look too (emotion). 
+Hello everyone! Ready for mock interviews? As you all know I $noun having
+to do this so let’s get this over with as $Speed as possible. Okay before 
+we start, I’m going to assume as $age year old’s you ae skilled in $adjective 
+this will be very useful in interviews. But remember to not look too $emotion. 
 The three last things to remember. One, you will fail if you are sweating 
-(plural noun) when you finally meet (prof name). Two, almost everyone here is 
-competing for the same job at (company), that means (number) people for one slot, 
-meaning you will probably not succeed in your career in (noun). Thirdly, my 
+$plural noun when you finally meet $professor name. Two, almost everyone here is 
+competing for the same job at $company, that means $number people for one slot, 
+meaning you will probably not succeed in your career in $noun. Thirdly, my 
 recommendation letter is more important than your interview, I am accepting 
-bribes in the form of (food). Okay, everyone (adjective)? Let’s start!
+bribes in the form of $food. Okay, everyone $adjective? Let’s start!

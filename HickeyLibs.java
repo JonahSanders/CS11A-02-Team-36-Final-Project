@@ -15,16 +15,16 @@ public class HickeyLibs {
   public static String story = "";
   public static void main(String[] args) {
     System.out.println("Welcome to HickeyLibs!!!!");
-    System.out.print("In this Program we will be completing a Madlibs. Mad Libs is a phrasal template word game where a player is prompted for a list of words to substitute for blanks in a story");
+    System.out.printf("In this Program we will be completing a Madlibs. %nMad Libs is a phrasal template word game where a player is prompted for a list of words to substitute for blanks in a story");
     System.out.println("You will be asked to enter either nouns, adjectives, verbs, adverbs, or interjections");
     System.out.println("");
     System.out.println("Ready to start?");
     System.out.println("Please enter 1, 2, 3 to choose the storyline you will be completing: ");
 
-    story = StoryBank.storyCall(/*UserInput*/2);
+    story = StoryBank.storyCall(/*UserInput*/1);
     story = StoryBank.convertStoryToString(story);
     String[] storyArray = StoryBank.convertStoryToArray(story);
-    System.out.println(Arrays.toString(storyArray));
+    System.out.println(Arrays.toString(storyArray)); //test if the story is right in the array
     StoryBank.iterateThroughStory(storyArray);
     //Would you like your story read aloud Message
     //Jiale: add a conditional if they say yeah add the voice thing from L30 in class using SimpleTTS

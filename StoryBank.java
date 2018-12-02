@@ -89,7 +89,7 @@ public class StoryBank{
   * @since 2018-11-22
   */
   public static String[] convertStoryToArray(String story){
-    return story.split("[^a-zA-Z'-]+");
+    return story.split("[^a-zA-Z'-]+//$");
   }
 
   /**
@@ -102,7 +102,6 @@ public class StoryBank{
   public static void iterateThroughStory(String[] storyArray){
     Scanner user = new Scanner(System.in); //to have the user put in that word
     for(int i=0; i<storyArray.length;i++){
-      //check if element is equal to a term needed for input
       if(storyArray[i]=="NOUN"){
         System.out.print("Please Enter A Noun:");
         storyArray[i]=user.next();

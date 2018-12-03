@@ -23,7 +23,7 @@ public class HickeyLibs {
     Scanner scan = new Scanner(System.in);
     int storyChoice = scan.nextInt();
     
-    story = StoryBank.storyCall(/*UserInput*/2);
+    story = StoryBank.storyCall(storyChoice);
     story = StoryBank.convertStoryToString(story);
     String[] storyArray = StoryBank.convertStoryToArray(story);
     System.out.println(Arrays.toString(storyArray));

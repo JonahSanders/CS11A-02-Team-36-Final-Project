@@ -26,7 +26,7 @@ public class HickeyLibs {
     story = StoryBank.storyCall(storyChoice);
     story = StoryBank.convertStoryToString(story);
     String[] storyArray = StoryBank.convertStoryToArray(story);
-    System.out.println(Arrays.toString(storyArray));
+    //System.out.println(Arrays.toString(storyArray));
     StoryBank.iterateThroughStory(storyArray);
     //Would you like your story read aloud Message
     //Jiale: add a conditional if they say yeah add the voice thing from L30 in class using SimpleTTS

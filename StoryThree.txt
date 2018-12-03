@@ -1,13 +1,13 @@
 My name is Tim Hickey, and I am a professor of computer science here at Brandeis.
-So the idea behind $noun program is that we bring in students and in $number hours 
-we teach them everything they need to know about building an $adjective database-backed 
-reactive web application, in a team of typically around $number students. And they go 
-present their ideas to $company. Our focus is on $noun projects because it's the area 
-of computer science that you can have the most impact with the least previous $noun .
-  The United States is in dire need of computing $occupation . There are projections 
+So the idea behind $Noun program is that we bring in students and in $Number hours 
+we teach them everything they need to know about building an $Adjective database-backed 
+reactive web application, in a team of typically around $Number students. And they go 
+present their ideas to $Company. Our focus is on $Noun projects because it's the area 
+of computer science that you can have the most impact with the least previous $Noun .
+  The United States is in dire need of computing $Occupation . There are projections 
 that over the next decade we're going to have a million new jobs created in the Computer 
-science domain and I think this is something that could be very $adjective to students, 
-especially high school students, and maybe $verb them to pursuing a computer science 
+science domain and I think this is something that could be very $Adjective to students, 
+especially high school students, and maybe $Verb them to pursuing a computer science 
 major when they get in college.
-  It's a wonderful $adjective about being able to create something which could have
+  It's a wonderful $Adjective about being able to create something which could have
 an impact on the world.

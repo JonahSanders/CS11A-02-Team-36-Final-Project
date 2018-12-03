@@ -84,11 +84,12 @@ public class StoryBank{
   * The convertStoryToArray method takes the story, now a large String value,
   * and from that converts it to an Array, with each word corresponding to an
   * element in an array
-  * @author Jonah Sanders
+  * @author Jonah Sanders and Leah Fernandez
   * @version 1.1
   * @since 2018-11-22
   */
   public static String[] convertStoryToArray(String story){
+    
     String[] result = story.split(" ");
     return result;
     //return story.split("[^a-zA-Z'-]+");

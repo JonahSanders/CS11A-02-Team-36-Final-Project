@@ -89,7 +89,9 @@ public class StoryBank{
   * @since 2018-11-22
   */
   public static String[] convertStoryToArray(String story){
-    return story.split("[^a-zA-Z'-]+");
+    String[] result = story.split(" ");
+    return result;
+    //return story.split("[^a-zA-Z'-]+");
   }
 
   /**

@@ -13,7 +13,7 @@ import java.nio.file.*;
 */
 public class HickeyLibs {
   public static String story = "";
-  public static void main(String[] args) {
+  public static void main(String[] args){
     System.out.println("Welcome to HickeyLibs!!!!");
     System.out.printf("In this Program we will be completing a Madlibs. %nMad Libs is a phrasal template word game where a player is prompted for a list of words to substitute for blanks in a story");
     System.out.println("You will be asked to enter either nouns, adjectives, verbs, adverbs, or interjections");

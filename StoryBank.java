@@ -90,7 +90,11 @@ public class StoryBank{
   */
   public static String[] convertStoryToArray(String story){
 
-    String[] result = story.split(" ");
+    String[] result = story.split(" "); /** 
+                                        * The story is split with out the removal of punctuation 
+                                        * or symbols as the symbol $ is necassary to recognise which 
+                                        * word needs to be altered by the user
+                                        */
     return result;
     //return story.split("[^a-zA-Z'-]+");
   }
@@ -104,15 +108,18 @@ public class StoryBank{
   */
   public static void iterateThroughStory(String[] storyArray){
     Scanner input = new Scanner(System.in); //to have the user put in that word
-    //StringBuffer buffer1= new StringBuffer(x);
+   
     //z is the finalised string that includes all the new words that have been entered by the user
     String z = "";
 
     for(int i=0; i<storyArray.length;i++){
 
-        if(storyArray[i].charAt(0)=='$'){
+        if(storyArray[i].charAt(0)=='$'){ /** If a word begins with a $ the computer recognises it and 
+                                           * removes the symbol before prompting the user to input a 
+                                           * variable
+                                           */
 
-            String word = storyArray[i].substring(1);
+            String word = storyArray[i].substring(1); //informs the program that the word begins at the second character after the $
             char firstLetter = word.charAt(0);
 
                if(firstLetter=='A'|| firstLetter== 'E'|| firstLetter=='I'|| firstLetter=='O'||firstLetter=='U'){
@@ -127,7 +134,7 @@ public class StoryBank{
 
             }
 
-            z = z + " " + storyArray[i];
+            z = z + " " + storyArray[i]; //If the word does not begin with a $ it is automatically added to the string
 
         }
         System.out.println(z); //Print out new story with the user's input

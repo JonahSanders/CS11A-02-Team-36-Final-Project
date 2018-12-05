@@ -1,14 +1,13 @@
-  My name is Tim Hickey, and I am a professor of computer science here at Brandeis.
-So the idea behind (project name noun#1) program is that we bring in students
-and in (time) we teach them everything they need to know about building an (adj.#1)
-database-backed reactive web application, in a team of typically around (number)
-students. And they go present their ideas to (company name#2). Our focus is on
-(project name noun#1) because it's the area of computer science that you can have
-the most impact with the least previous (noun#3).
-  The United States is in dire need of computing (occupation noun#4). There are
-projections that over the next decade we're going to have a million new jobs
-created in the Computer science domain and I think this is something that could
-be very (adj.#2) to students, especially high school students, and maybe (verb#1)
-them to pursuing a computer science major when they get in college.
-  It's a wonderful (adj.#3) about being able to create something which could have
+My name is Tim Hickey, and I am a professor of computer science here at Brandeis.
+So the idea behind $Noun program is that we bring in students and in $Number hours 
+we teach them everything they need to know about building an $Adjective database-backed 
+reactive web application, in a team of typically around $Number students. And they go 
+present their ideas to $Company. Our focus is on $Noun projects because it's the area 
+of computer science that you can have the most impact with the least previous $Noun .
+  The United States is in dire need of computing $Occupation . There are projections 
+that over the next decade we're going to have a million new jobs created in the Computer 
+science domain and I think this is something that could be very $Adjective to students, 
+especially high school students, and maybe $Verb them to pursuing a computer science 
+major when they get in college.
+  It's a wonderful $Adjective about being able to create something which could have
 an impact on the world.

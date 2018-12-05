@@ -84,12 +84,15 @@ public class StoryBank{
   * The convertStoryToArray method takes the story, now a large String value,
   * and from that converts it to an Array, with each word corresponding to an
   * element in an array
-  * @author Jonah Sanders
+  * @author Jonah Sanders and Leah Fernandez
   * @version 1.1
   * @since 2018-11-22
   */
   public static String[] convertStoryToArray(String story){
-    return story.split("[^a-zA-Z'-]+//$");
+
+    String[] result = story.split(" ");
+    return result;
+    //return story.split("[^a-zA-Z'-]+");
   }
 
   /**
@@ -97,18 +100,37 @@ public class StoryBank{
   * input nouns,verbs, etc when needed then prints the new story!
   * @author Leah Fernandez
   * @version 1.1
-  * @since 2018-11-22
+  * @since 2018-12-3
   */
   public static void iterateThroughStory(String[] storyArray){
-    Scanner user = new Scanner(System.in); //to have the user put in that word
+    Scanner input = new Scanner(System.in); //to have the user put in that word
+    //StringBuffer buffer1= new StringBuffer(x);
+    //z is the finalised string that includes all the new words that have been entered by the user
+    String z = "";
+
     for(int i=0; i<storyArray.length;i++){
-      if(storyArray[i]=="NOUN"){
-        System.out.print("Please Enter A Noun:");
-        storyArray[i]=user.next();
-        System.out.println("");
+
+        if(storyArray[i].charAt(0)=='$'){
+
+            String word = storyArray[i].substring(1);
+            char firstLetter = word.charAt(0);
+
+               if(firstLetter=='A'|| firstLetter== 'E'|| firstLetter=='I'|| firstLetter=='O'||firstLetter=='U'){
+                  System.out.println("Enter an " + word + ": ");
+               }
+               else{
+                   System.out.println("Enter a " + word + ": ");
+               }  //Determines if vowel or consonant to choose a or an.
+
+             String newWord = input.next();
+             storyArray[i] = newWord; //replaces the word with a new word entered by user
+
+            }
+
+            z = z + " " + storyArray[i];
+
+        }
+        System.out.println(z); //Print out new story with the user's input
       }
-      //     else if...
-    }
-    System.out.println(Arrays.toString(storyArray)); //Print out new story with the user's input
+
   }
-}

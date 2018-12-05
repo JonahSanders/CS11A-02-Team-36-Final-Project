@@ -20,11 +20,13 @@ public class HickeyLibs {
     System.out.println("");
     System.out.println("Ready to start?");
     System.out.println("Please enter 1, 2, 3 to choose the storyline you will be completing: ");
+    Scanner scan = new Scanner(System.in);
+    int storyChoice = scan.nextInt();
 
-    story = StoryBank.storyCall(/*UserInput*/1);
+    story = StoryBank.storyCall(storyChoice);
     story = StoryBank.convertStoryToString(story);
     String[] storyArray = StoryBank.convertStoryToArray(story);
-    System.out.println(Arrays.toString(storyArray)); //test if the story is right in the array
+    //System.out.println(Arrays.toString(storyArray));
     StoryBank.iterateThroughStory(storyArray);
     //Would you like your story read aloud Message
     //Jiale: add a conditional if they say yeah add the voice thing from L30 in class using SimpleTTS
